@@ -203,27 +203,25 @@
         <section id="data-diri" class="data-diri mb-custom py-2 py-lg-5">
           <div class="jumbotron jumbotron-fluid transparent-bg pb-0">
             <div class="container">
-              <div class="row">
-                <div class="col-12 col-lg-4 mb-4">
+              <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-5 mb-4">
+                  <div class="mb-3">
+                    <p class="h5 h5-responsive font-weight-bold text-center">MY PROFILE</p>
+                  </div>
                   <img :src="about.image" class="img-fluid img-thumbnail shadow lazyload" alt="...">
                   <div class="mt-3">
                     <a :href="about.linked" class="btn btn-primary shadow btn-block" role="button" aria-pressed="true"><i class="fab fa-linkedin"></i> See My Linkedin</a>
                   </div>
                 </div>
-                <div class="col-12 col-lg-8">
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
                   <div class="mb-3">
-                    <p class="h5 h5-responsive font-weight-bold">ABOUT ME</p>
+                    <p class="h5 h5-responsive font-weight-bold text-center">TOOLS SKILLS</p>
                   </div>
-                  <div class="mb-4 mb-lg-5">
-                    <p class="h6 font-italic font-weight-light mb-3">{{about.desc1}}</p>
-                    <p class="h6 font-italic font-weight-light">{{about.desc2}}</p>
-                  </div>
-                  <div class="mb-3">
-                    <p class="h5 h5-responsive font-weight-bold">TOOLS SKILLS</p>
-                  </div>
-                  <div class="d-flex flex-wrap flex-row bd-highlight">
+                  <div class="d-flex flex-wrap flex-row justify-content-center bd-highlight">
                     <div :class="t.class" v-for="t in tools" :key="t.id">
-                      <img :src="t.image" class="img-fluid lazyload" alt="..." width="40rem">
+                      <img :src="t.image" class="img-fluid lazyload" alt="..." width="50rem">
                     </div>
                   </div>
                 </div>
